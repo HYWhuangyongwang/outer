@@ -1,0 +1,230 @@
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.koan-BG{
+    width: 100%;
+    background: url("../img/background2.png") no-repeat;
+    background-size: 100% 6.05rem;
+    background-position: bottom;
+    padding-bottom: .5rem;
+    padding-top: .8rem;
+}
+.koanBox{
+    width: 6.3rem;
+    margin: 0 auto;
+
+}
+.koan-citation{
+    box-sizing: border-box;
+
+    width: 6.3rem;
+    border:1px dotted #b50000;
+    border-radius: 5px;
+    padding: .22rem;
+}
+.koan-citation p{
+    color: #666666;
+    font-size: .22rem;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.koan-imgBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+    width: 6.3rem;
+    background: url("../img/Generatingpage-img-bg.png")   no-repeat;
+    background-size: 100% 100%;
+    padding: .29rem .29rem;
+}
+.referral-L{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+.referral-R{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.referral-R img{
+    width: 2.5rem;
+    height: 2.3rem;
+}
+.referral-L span{
+    color:#600000;
+    font-size: .5rem;
+
+}
+.referral-L p{
+    color: #333333;
+    font-size: .24rem;
+
+
+}
+.character{
+    margin-top: .8rem;
+    width: 100%;
+}
+.character img{
+    display: block;
+    width: 2.25rem;
+    height: .55rem;
+    margin: 0 auto;
+}
+.analysisBox{
+    box-sizing: content-box;
+    width: 100%;
+    margin-top: .5rem;
+}
+.analysis-content{
+    color: #666666;
+    font-size: .22rem;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.analysis-content:before {
+    display: inline-block;
+    content: ' ';
+    background: url('../img/generate-sign.png') no-repeat;
+    background-size: .25rem .25rem;
+    width: .25rem;
+    height: .25rem;
+}
+.clearBox{
+    margin-top: .5rem;
+    width: 100%;
+    height: .68rem;
+    line-height: .68rem;
+    background: #b70002;
+    text-align: center;
+    border-radius: 5px;
+    font-size: .3rem;
+    color: #fff;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.friendBox{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.friend-L{
+    width: 2.93rem;
+    height: .58rem;
+    line-height: .58rem;
+    border-radius: 5px;
+    border: 1px solid #b70002;
+    text-align: center;
+    color: #b60000;
+    font-size: .26rem;
+}
+.friend-R{
+    width: 2.93rem;
+    height: .58rem;
+    line-height: .58rem;
+    border-radius: 5px;
+    background: #b70002;
+    color: #fff;
+    font-size: .26rem;
+    text-align: center;
+}
+.codeBox{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 4rem;
+    border: 2px dotted  #b70002;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .3rem;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.codeBox img{
+    margin-top: .3rem;
+    margin-bottom: .2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.codeBox span{
+    color: #333333;
+    font-size: .22rem;
+}
+.shade{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.dialogBox{
+    width: 5rem;
+    padding-bottom: .3rem;
+    margin: 50% auto;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.dialog-T{
+    height: .75rem;
+    line-height: .75rem;
+    text-align: center;
+    font-size: .31rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.dialog-Z{
+    width: 90%;
+font-size: .16rem;
+    margin: .2rem auto;
+
+}
+.dialog-btn{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+.btn-L{
+    width: 1.76rem;
+    height: .5rem;
+    border: 1px solid #b60000;
+    border-radius: 5px;
+    line-height: .5rem;
+    text-align: center;
+    margin-right: .67rem;
+}
+.btn-R{
+    width: 1.76rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    background: #b60000;
+    border-radius: 5px;
+    color: #fff
+}
+.dia-DW{
+    position: relative;
+}
+.dialog-tb{
+    position: absolute;
+    left: 4.7rem;
+    top: -1.4rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.dialog-tb img{
+
+    width: .4rem;
+    height: .4rem;
+
+}

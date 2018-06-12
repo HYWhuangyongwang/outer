@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>心印测试</title>
+    <script>
+        fnResize();
+        window.onresize = function () {
+            fnResize()
+        };
+        function fnResize() {
+            var deviceWidth = document.documentElement.clientWidth || window.innerWidth;
+            if (deviceWidth >= 750) {
+                deviceWidth = 750
+            }
+            if (deviceWidth <= 320) {
+                deviceWidth = 320
+            }
+            document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
+        }
+    </script>
+    <link rel="stylesheet" href="css/H-ui.reset.css">
+    <link rel="stylesheet" href="css/Character_answer.css">
+</head>
+<body>
+<div class="answer-Bg" id="bigBox">
+    <!--开场白结构开始-->
+    <div class="answer-foreword">
+        <img src="./img/LOGO.png" alt="" class="xt-head">
+        <div class="forewordBox">
+            <p class="issue">下面有32道题，可以知道与你的人格类型拥有最佳匹配度的人是哪一类。快来测测吧</p>
+        </div>
+    </div>
+    <ul id="quesBox">
+        <!--<li class="answerBox">-->
+            <!--<span class="answer-num">第${index+1}题/共${dataArr.length}题</span>-->
+
+            <!--<div class="system-box">-->
+                <!--<img src="./img/LOGO.png" alt="" class="xt-head">-->
+                <!--<div class="system-BG">-->
+                    <!--<p>${cutT.question}</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<ol class="options-box" id="lch">-->
+                <!--${str1}-->
+            <!--</ol>-->
+
+            <!--<div class="user-box-T">-->
+                <!--<img src="./img/mate-tx.png" alt="" class="gr-head">-->
+                <!--<span class="user"></span>-->
+            <!--</div>-->
+        <!--</li>`-->
+    </ul>
+
+</div>
+<div class="start" id="start">开始答题</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/answer.js"></script>
+</body>
+</html>

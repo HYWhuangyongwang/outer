@@ -1,0 +1,113 @@
+html,body{
+    background: #f5f5f5;
+}
+.mate-bg{
+    background: #f5f5f5;
+    padding-bottom: .5rem;
+}
+.mate-head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: .9rem;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .29rem;
+}
+.head-L,.head-R{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.head-L-T{
+    box-sizing: border-box;
+    line-height: .9rem;
+    height: .9rem;
+    color: #333333;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.halving{
+    background: #ccc;
+    width: .03rem;
+    height: 75%;
+}
+
+.mate-content{
+    margin: 0 auto;
+    width: 92%;
+    border-radius: 5px;
+}
+.mate-list{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(207,207,207);
+    background: #fff;
+}
+.list-L{
+    display: flex;
+    flex-direction: row;
+    height: 1.7rem;
+    justify-content:space-between;
+    align-items: center;
+    width:60%;
+}
+.mate-number{
+    margin-left: .44rem;
+    font-size: .6rem;
+    color: #383838;
+}
+.list-tx{
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    border: 1px solid #b60000;
+}
+.presentationBox{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.mate-title{
+    width: 2rem;
+    font-size: .28rem;
+    color: #333333;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.mate-P{
+    color: #666666;
+    font-size: .22rem;
+    margin-top: .2rem;
+}
+.list-R{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+}
+.list-R-icon{
+    width: .35rem;
+    height: .48rem;
+    margin-left: 1rem;
+}
+.list-R-num{
+    font-size: .24rem;
+    color: #666666;
+    margin-top: .1rem;
+    margin-left: 1rem;
+}
+.checked{
+    box-sizing: border-box;
+    font-size: .3rem;
+    font-weight: bold;
+    border-bottom: 3px solid #600000;
+    color: #600000;
+    line-height: .9rem;
+    height: .9rem;
+}
