@@ -24,7 +24,7 @@ html,body{
 .letter-L{
     position: relative;
     width: 75%;
-    max-height: 15rem;
+    max-height: 25rem;
     padding: 1.3rem .6rem .6rem 0;
     box-sizing: content-box;
 }
