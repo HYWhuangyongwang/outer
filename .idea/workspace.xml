@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfcb5aec-72fb-477d-b587-ee3a8359159e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_answer.css" afterPath="$PROJECT_DIR$/css/Character_answer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_contrast.css" afterPath="$PROJECT_DIR$/css/Character_contrast.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_home.css" afterPath="$PROJECT_DIR$/css/Character_home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_letter.css" afterPath="$PROJECT_DIR$/css/Character_letter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_share.css" afterPath="$PROJECT_DIR$/css/Character_share.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +23,7 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1470">
-                  <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+                  <caret line="78" column="7" lean-forward="false" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -223,12 +219,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528797739270</updated>
       <workItem from="1528797740706" duration="9497000" />
-      <workItem from="1528868323241" duration="2052000" />
+      <workItem from="1528868323241" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11549000" />
+    <option name="totallyTimeSpent" value="11588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1053" extended-state="1" />
@@ -289,7 +285,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
-          <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+          <caret line="78" column="7" lean-forward="false" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>测试首页</title>
+    <title>生成报告</title>
+    <script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load(".referral-L", "6a987a337fbe496790208d52555fb76a", "LiDeBiao-Xing3");
+
+        $youziku.draw();
+    </script>
     <script>
         fnResize();
         window.onresize = function () {
@@ -21,59 +27,86 @@
             document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
         }
     </script>
+
     <link rel="stylesheet" href="css/H-ui.reset.css">
-    <link rel="stylesheet" href="css/Character_home.css">
-    <link rel="stylesheet" href="css/LCalendar.css">
+    <link rel="stylesheet" href="css/Character_koan.css">
+
 </head>
 <body>
-
-<div class="home">
-<header>
-    <img src="./img/LOGO.png" alt="" class="C8-logo">
-</header>
-
-
-<div class="contentBox">
-<div class="home-content">
-    <img src="./img/homepage-title.png" alt="" class="home-Title">
-</div>
-<div class="home-forewordBox">
-    <p class="foreword">
-        本命心印：每个人与生俱来的被造物主刻上了一生都很难改变的性格烙印，我们称之为“本命心印”（简称“心印”），每个人的“本命心印”都被他的“本命佛”所守护，想知道你的“本命心印”和“本命佛”是什么吗？快来测一测吧！
-    </p>
-</div>
-    <div class="addedBox">
-        <span class="added-left"></span>已有3666人找到属于自己的心印<span class="added-right"></span>
+<div class="shade" id="shade">
+    <div class="dialogBox">
+        <div class="dia-DW">
+        <div class="dialog-tb">
+            <img src="./img/GB.png" alt="" id="closeBtn">
+        </div>
+        <h3 class="dialog-T">解锁心印</h3>
+        <div class="dialog-Z">
+            可直接支付解锁查看测试结果，亦可分享朋友圈，让好友为你解锁贡献一份力量！
+        </div>
+        <div class="dialog-btn">
+            <div class="btn-L">直接解锁</div>
+            <div class="btn-R">分享减价</div>
+        </div>
+        </div>
     </div>
-    <div class="messageBox">
-        <h2 class="message-title">通过测试了解自己性格内心</h2>
-        <div class="message-content">
-            <h3>你的名字</h3>
-            <div class="inp-box">
-            <input type="text" class="message-import">
+
+</div>
+<div class="koan-BG">
+
+    <div class="koanBox">
+        <div class="koan-content">
+            <div class="koan-citation">
+                <p>心印，又名佛心印：谓禅之本意，不立文字，不依言语，直以心为印，故曰心印。《祖庭事苑》卷八云：心印，达摩西来，不立文字，单传心印，直指人心，见性成佛。</p>
             </div>
-            <div class="choice">
-                <input type="radio" name="radio" value="1" class="choice-L">男
-                <input type="radio" name="radio" value="1" class="choice-R">女
+           <div class="koan-imgBox">
+               <div class="referral-L">
+               <span>“外圆人事”</span>
+                   <p>“张三”在出生那一刻所接受本命佛为你盖的心印“外圆人事”，注定了你的性情、命运</p>
+               </div>
+               <div class="referral-R">
+               <img src="./img/Heartseal-1.png" alt="">
+               </div>
+           </div>
+
+
+         <div class="character">
+             <img src="./img/generate-Title.png" alt="">
+         </div>
+
+            <div class="analysisBox">
+                <p class="analysis-content">“张三”在出生那一刻所接受本命佛为你盖的心印“外圆人事”，注定了你的性情、命运“张三”在出生那一刻所接受本命佛为你盖的心印“外圆人事”，注定了你的性情、命运</p>
             </div>
-            <h3>出生日期</h3>
-            <div class="inp-box">
-                <input id="demo1" type="text" readonly="" placeholder="例如：2018/05/26" data-lcalendar="2016-05-11,2016-05-11" />
+            <div class="analysisBox">
+                <p class="analysis-content">“张三”在出生那一刻所接受本命佛为你盖的心印“外圆人事”，注定了你的性情、命运“张三”在出生那一刻所接受本命佛为你盖的心印“外圆人事”，注定了你的性情、命运</p>
             </div>
-            <button class="home-btn"><a href="#"></a>开启解锁心印之路</button>
+
+<div class="clearBox" id="clear">解锁心印，9.9元</div>
+
+<div class="friendBox">
+    <div class="friend-L">了解其它好友</div>
+    <div class="friend-R">分享好友</div>
+</div>
+
+<div class="codeBox">
+    <img src="./img/ewm.png" alt="">
+    <span>长按.扫码</span>
+    <span>寻找属于自己的心印</span>
+</div>
         </div>
     </div>
 </div>
-</div>
-<script src="js/LCalendar.js"></script>
 <script>
-    var calendar = new LCalendar();
-    calendar.init({
-        'trigger': '#demo1', //标签id
-        'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
-        'minDate': '1900-1-1', //最小日期
-        'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() //最大日期
-    });
+    var oPen = document.getElementById("clear"),
+        shade =document.getElementById("shade"),
+        closeBtn =document.getElementById("closeBtn");
+    oPen.onclick=function () {
+        shade.style.display ="block"
+    };
+    closeBtn.onclick=function () {
+        shade.style.display ="none"
+    }
 </script>
+
+
 </body>
 </html>
