@@ -1,6 +1,4 @@
-html,body{
-    background: #fff;
-}
+
 .answer-Bg{
     padding-bottom: 1rem;
 }
@@ -108,7 +106,7 @@ html,body{
     box-shadow:1px 1px 2px rgba(0,0,0,.2);
     border: 1px solid #cccccc;
     width: 3rem;
-    background: #fff;
+    background: rgba(0,0,0,.01);
     border-radius: 5px;
     padding: .2rem;
     position: relative;
@@ -129,29 +127,23 @@ html,body{
 .user:before,
 .user:after{
     position:absolute;
-    display: block;
     content:'';
     width:.15rem;
     height:.15rem;
     left:3.3rem;
-    z-index:-1;
+    z-index: 1;
     overflow:hidden;
     pointer-events:none;
     -webkit-transform:rotate(-45deg);
     -mz-transform:rotate(-45deg);
     transform:rotate(-45deg);
-
 }
 .user:before{
     background:white;
-    display: block;
-    z-index:-1;
     box-shadow:1px 1px 2px rgba(0,0,0,.2)
 }
 .user:after{
     background:#fff;
-    display: block;
-    z-index:-1;
 }
 .answerBox{
     display: none;
@@ -160,7 +152,7 @@ html,body{
     display: none;
 }
 #await{
-    display: none;
+display: none;
 }
 .await-cent{
     height: .8rem;

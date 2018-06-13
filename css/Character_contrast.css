@@ -96,9 +96,12 @@
     display: inline-block;
     width: 3.6rem;
     height: .12rem;
-    background: red;
+    background: orange;
     border-radius: 5px;
 
+}
+.newT{
+    background: red;
 }
 .progress-matching{
     font-size: .26rem;

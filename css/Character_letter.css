@@ -77,7 +77,6 @@ html,body{
 }
 .letter-R-z span{
     font-size: .24rem;
-
     color: #fffcf3;
 }
 .letter-R-b{
@@ -90,7 +89,8 @@ html,body{
     height: .88rem;
 }
 .letter-R-b span{
-    font-size: .08rem;
+    font-size: .18rem;
+    text-align: center;
 }
 .inscribeBox h3{
     text-align: center;
