@@ -172,7 +172,7 @@ var  list = Oul.getElementsByClassName("answerBox");
 
 var start = document.getElementById("start");
 var oOl = document.getElementById('lch');
-
+var await =document.getElementById('await');
 var user =document.getElementsByClassName("user-box-T");
 var user2 =document.getElementsByClassName("user");
 start.onclick =function () {
@@ -196,14 +196,14 @@ for (var i = 0; i < list.length; i++) {
              answerOne.getElementsByClassName('user')[0].innerText = this.innerText;
              this.className ="options-listNew";
              if(this.previousElementSibling){
-                 console.log(this.previousElementSibling);
+
                  this.previousElementSibling.onclick=null;
              }else {
                 this.nextElementSibling.onclick =null;
              }
              toBottom();
 
-                if(oIndex <32){
+                if(oIndex<32){
                     this.onclick =null;
                  var Timer =  setTimeout(function () {
                         list[oIndex].style.display="block";
@@ -212,7 +212,8 @@ for (var i = 0; i < list.length; i++) {
 
                  },1000)
                 }else{
-                    start.style.display="block"
+                    console.log(1);
+                    await.style.display="block"
                 }
 
 
