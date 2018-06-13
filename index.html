@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>心印测试</title>
+    <title>心印图</title>
+    <script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+
+    <script type="text/javascript">
+        $youziku.load(".letter-jd", "6a987a337fbe496790208d52555fb76a", "LiDeBiao-Xing3");
+        $youziku.load(".letter-R-z", "6a987a337fbe496790208d52555fb76a", "LiDeBiao-Xing3");
+
+        $youziku.draw();
+    </script>
     <script>
         fnResize();
         window.onresize = function () {
@@ -18,36 +26,47 @@
             if (deviceWidth <= 320) {
                 deviceWidth = 320
             }
+
             document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
         }
+
     </script>
     <link rel="stylesheet" href="css/H-ui.reset.css">
-    <link rel="stylesheet" href="css/Character_answer.css">
+    <link rel="stylesheet" href="css/Character_letter.css">
 </head>
 <body>
-<div class="answer-Bg" id="bigBox">
-    <!--开场白结构开始-->
-    <div class="answer-foreword">
-        <img src="./img/LOGO.png" alt="" class="xt-head">
-        <div class="forewordBox">
-            <p class="issue">本次测试共计32题，每个人都有自己的“心印”并被“本命佛”守护，想知道你的“心印”和“本命佛”是什么吗？快来测一测吧！</p>
-        </div>
-    </div>
-    <ul id="quesBox">
-    <!--JS字符串位置-->
-    </ul>
-    <div id="await">
-        <div class="answer-foreword">
-            <img src="./img/LOGO.png" alt="" class="xt-head">
-            <div class="await-cent">
-                <p class="issue ">正在为你生成报告...</p>
+<div class="letter-bg">
+
+    <div class="letter-bgn">
+        <div class="letter-L">
+            <div class="bg-fx"> </div>
+            <p class="letter-jd" id="main">你是一个认真又专注的人，青睐幕后的工作。你的交流方式具体且实际，善于采取合作的方式来实现自己的目标。你是指导性的管理者，极度可靠，你不信任任何形式的空想和标新立异。在面对整体性、细节、合法性，以及标准的操作流程和有序的物质流动时所体现出来那种精益求精的品质，使你拥有广阔的择业范围。</p>
+            <div class="inscribeBox">
+                <img src="./img/Heartseal-9@2x.png" alt="">
+                <h3>印文：外圆物事</h3>
+
             </div>
         </div>
+        <div class="letter-R">
+         <div class="letter-R-t">
+             <img src="./img/xy@2x.png" alt="">
+         </div>
+         <div class="letter-R-z">
+             <span>李</span>
+             <span>白</span>
+             <span>印</span>
+         </div>
+         <div class="letter-R-b">
+             <img src="./img/ewm.png" alt="">
+             <span>长按扫码</span>
+         </div>
+        </div>
     </div>
-</div>
 
-<div class="start" id="start">开始答题</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/answer.js"></script>
+</div>
+<script>
+
+
+</script>
 </body>
 </html>
