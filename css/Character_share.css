@@ -131,7 +131,7 @@
 }
 .switchBox{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: .2rem;
@@ -145,7 +145,7 @@
 .switch-n{
     font-size: .24rem;
     color: #b60000;
-     margin-right: .15rem;
+    margin-top: .16rem;
 }
 .ruleBox{
     margin: .8rem  auto 0;

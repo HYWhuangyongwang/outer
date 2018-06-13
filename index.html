@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>心印测试</title>
+    <script>
+        fnResize();
+        window.onresize = function () {
+            fnResize()
+        };
+        function fnResize() {
+            var deviceWidth = document.documentElement.clientWidth || window.innerWidth;
+            if (deviceWidth >= 750) {
+                deviceWidth = 750
+            }
+            if (deviceWidth <= 320) {
+                deviceWidth = 320
+            }
+            document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
+        }
+    </script>
+    <link rel="stylesheet" href="css/H-ui.reset.css">
+    <link rel="stylesheet" href="css/Character_answer.css">
+</head>
+<body>
+<div class="answer-Bg" id="bigBox">
+    <!--开场白结构开始-->
+    <div class="answer-foreword">
+        <img src="./img/LOGO.png" alt="" class="xt-head">
+        <div class="forewordBox">
+            <p class="issue">本次测试共计32题，每个人都有自己的“心印”并被“本命佛”守护，想知道你的“心印”和“本命佛”是什么吗？快来测一测吧！</p>
+        </div>
+    </div>
+    <ul id="quesBox">
+    <!--JS字符串位置-->
+    </ul>
+    <div id="await">
+        <div class="answer-foreword">
+            <img src="./img/LOGO.png" alt="" class="xt-head">
+            <div class="await-cent">
+                <p class="issue ">正在为你生成报告...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="start" id="start">开始答题</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/answer.js"></script>
+</body>
+</html>

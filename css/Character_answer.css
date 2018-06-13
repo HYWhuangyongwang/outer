@@ -1,6 +1,8 @@
+html,body{
 
+}
 .answer-Bg{
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .answer-Bg{
     width: 90%;
@@ -16,7 +18,7 @@
 .forewordBox{
     display: flex;
     align-items: center;
-    width: 4.8rem;
+    width: 4.5rem;
     box-shadow: 0 0 .1rem rgba(0,0,0,.2);
     background: yellowgreen;
     border-radius: 5px;
@@ -79,7 +81,7 @@
     border-radius: 5px;
     line-height: .5rem;
     padding-left: .3rem;
-    background:#9eea6a;
+    background: 	#00DD00;
     border: 1px solid green;
 }
 .user-box-T{
@@ -108,7 +110,7 @@
     width: 3rem;
     background: rgba(0,0,0,.01);
     border-radius: 5px;
-    padding: .2rem;
+    padding-left: .3rem;
     position: relative;
     z-index: 99;
 }
@@ -130,7 +132,7 @@
     content:'';
     width:.15rem;
     height:.15rem;
-    left:3.3rem;
+    left:3.2rem;
     z-index: 1;
     overflow:hidden;
     pointer-events:none;
@@ -150,16 +152,4 @@
 }
 .user-box-T{
     display: none;
-}
-#await{
-display: none;
-}
-.await-cent{
-    height: .8rem;
-    line-height: .8rem;
-    width: 4.5rem;
-    padding-left: .5rem;
-    box-shadow: 0 0 .1rem rgba(0,0,0,.2);
-    background: yellowgreen;
-    border-radius: 5px;
 }
