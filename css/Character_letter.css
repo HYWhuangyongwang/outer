@@ -30,9 +30,8 @@ html,body{
 }
 .letter-jd {
     width: 100%;
-
     font-size: .32rem;
-    font-family: 楷体;
+
     writing-mode: tb-rl;
 
 }
