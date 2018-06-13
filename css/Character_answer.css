@@ -1,8 +1,8 @@
 html,body{
-
+    background: #fff;
 }
 .answer-Bg{
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 .answer-Bg{
     width: 90%;
@@ -18,7 +18,7 @@ html,body{
 .forewordBox{
     display: flex;
     align-items: center;
-    width: 4.5rem;
+    width: 4.8rem;
     box-shadow: 0 0 .1rem rgba(0,0,0,.2);
     background: yellowgreen;
     border-radius: 5px;
@@ -81,7 +81,7 @@ html,body{
     border-radius: 5px;
     line-height: .5rem;
     padding-left: .3rem;
-    background: 	#00DD00;
+    background:#9eea6a;
     border: 1px solid green;
 }
 .user-box-T{
@@ -108,9 +108,9 @@ html,body{
     box-shadow:1px 1px 2px rgba(0,0,0,.2);
     border: 1px solid #cccccc;
     width: 3rem;
-    background: rgba(0,0,0,.01);
+    background: #fff;
     border-radius: 5px;
-    padding-left: .3rem;
+    padding: .2rem;
     position: relative;
     z-index: 99;
 }
@@ -132,7 +132,7 @@ html,body{
     content:'';
     width:.15rem;
     height:.15rem;
-    left:3.2rem;
+    left:3.3rem;
     z-index: 1;
     overflow:hidden;
     pointer-events:none;
@@ -152,4 +152,16 @@ html,body{
 }
 .user-box-T{
     display: none;
+}
+#await{
+    display: none;
+}
+.await-cent{
+    height: .8rem;
+    line-height: .8rem;
+    width: 4.5rem;
+    padding-left: .5rem;
+    box-shadow: 0 0 .1rem rgba(0,0,0,.2);
+    background: yellowgreen;
+    border-radius: 5px;
 }
