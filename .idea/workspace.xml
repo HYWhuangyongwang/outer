@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f64671-97e1-4477-a5fc-d1216105eda9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Character_letter.css" afterPath="$PROJECT_DIR$/css/Character_letter.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +20,7 @@
       <file leaf-file-name="Character_letter.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/Character_letter.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
+            <state relative-caret-position="464">
               <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
               <folding />
             </state>
@@ -128,12 +127,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528861106110</updated>
-      <workItem from="1528861107714" duration="77000" />
+      <workItem from="1528861107714" duration="270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77000" />
+    <option name="totallyTimeSpent" value="270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1053" extended-state="0" />
@@ -170,7 +169,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/Character_letter.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="464">
           <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
           <folding />
         </state>
