@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>心印图</title>
-    <script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
-
-    <script type="text/javascript">
-        $youziku.load(".letter-jd", "6a987a337fbe496790208d52555fb76a", "LiDeBiao-Xing3");
-        $youziku.load(".letter-R-z", "6a987a337fbe496790208d52555fb76a", "LiDeBiao-Xing3");
-
-        $youziku.draw();
-    </script>
+    <title>对比匹配</title>
     <script>
         fnResize();
         window.onresize = function () {
@@ -26,47 +18,145 @@
             if (deviceWidth <= 320) {
                 deviceWidth = 320
             }
-
             document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
         }
-
     </script>
     <link rel="stylesheet" href="css/H-ui.reset.css">
-    <link rel="stylesheet" href="css/Character_letter.css">
+    <link rel="stylesheet" href="css/Character_contrast.css">
 </head>
 <body>
-<div class="letter-bg">
+<div class="contrast-bg">
 
-    <div class="letter-bgn">
-        <div class="letter-L">
-            <div class="bg-fx"> </div>
-            <p class="letter-jd" id="main">你是一个认真又专注的人，青睐幕后的工作。你的交流方式具体且实际，善于采取合作的方式来实现自己的目标。你是指导性的管理者，极度可靠，你不信任任何形式的空想和标新立异。在面对整体性、细节、合法性，以及标准的操作流程和有序的物质流动时所体现出来那种精益求精的品质，使你拥有广阔的择业范围。</p>
-            <div class="inscribeBox">
-                <img src="./img/Heartseal-9@2x.png" alt="">
-                <h3>印文：外圆物事</h3>
+    <div class="contrastBox" id="price">
 
+        <header class="contrast-head">
+        <div class="contrast-L">
+            <img src="./img/mate-tx.png" alt="" class="contrast-L-img">
+            <span>张三</span>
+        </div>
+            <div class="contrast-z">
+                <img src="./img/Contrast-vs.png" alt="" class="contrast-z-img">
             </div>
-        </div>
-        <div class="letter-R">
-         <div class="letter-R-t">
-             <img src="./img/xy@2x.png" alt="">
-         </div>
-         <div class="letter-R-z">
-             <span>李</span>
-             <span>白</span>
-             <span>印</span>
-         </div>
-         <div class="letter-R-b">
-             <img src="./img/ewm.png" alt="">
-             <span>长按扫码</span>
-         </div>
-        </div>
+            <div class="contrast-R">
+                <img src="./img/mate-tx.png" alt="" class="contrast-R-img">
+                <span>张三</span>
+            </div>
+        </header>
+
+        <div class="resultBox">
+            <img src="./img/Contrast-title1.png" alt="" class="result-Top">
+
+            <div class="progressBox">
+                <div class="progress-T">
+                    <span class="progress-matching">匹配度</span>
+                    <div class="progress-T-D">
+                        <span class="progress-T-B"></span>
+                    </div>
+                    <span class="progress-number">75%</span>
+                </div>
+                <div class="progress-T">
+                    <span class="progress-matching">互补度</span>
+                    <div class="progress-T-D">
+                        <span class="progress-T-B  newT"></span>
+                    </div>
+                    <span class="progress-number">75%</span>
+                </div>
+            </div>
+            <!--对比图盒子-->
+            <div class="chart">
+                <!--在此处填写  加描点-->
+            </div>
+
+            <img src="./img/Contrast-title2.png" alt="" class="trait">
+
+            <div class="natureBox">
+                 <div class="nature-L">
+                     <div class="nature-BG">
+                     <img src="./img/Heartseal-1.png" alt="" class="nature-L-print">
+                     </div>
+                     <h3 class="nature-L-seal">印文：外圆人事</h3>
+                 </div>
+                <div class="nature-R">
+                    <div class="nature-BG">
+                        <img src="./img/Heartseal-1.png" alt="" class="nature-L-print">
+                    </div>
+                    <h3 class="nature-L-seal">印文：外圆人事</h3>
+                </div>
+            </div>
+
+            <div class="referralBox">
+                <div class="referral-L">
+
+                    <p class="referral-L-cont"><span class="referral-name">张三：</span>你是一个认真又专注的人，青睐幕后的工作。你的交流方式具体且实际，善于采取合作的方式来实现自己的目标。你是指导性的管理者，极度可靠，你不信任任何形式的空想和标新立异。在面对整体性、细节、合法性，以及标准的操作流程和有序的物质流动时所体现出来那种精益求精的品质，使你拥有广阔的择业范围。</p>
+                </div>
+
+                <div class="referral-R">
+
+                    <p class="referral-R-cont"><span class="referral-name">李四：</span>你是一个认真又专注的人，青睐幕后的工作。你的交流方式具体且实际，善于采取合作的方式来实现自己的目标。你是指导性的管理者，极度可靠，你不信任任何形式的空想和标新立异。在面对整体性、细节、合法性，以及标准的操作流程和有序的物质流动时所体现出来那种精益求精的品质，使你拥有广阔的择业范围。</p>
+                </div>
+            </div>
+
+    <div class="summary">
+        <h3 class="summary-title">道义之交</h3>
+        <p class="summary-content">你们之间的相似程度大于互补程度。你们之间有很多相似之处，很多事情可以不谋而合，你们有着非一般的默契。</p>
     </div>
 
-</div>
-<script>
 
+            <div class="codeBox">
+                <img src="./img/ewm.png" alt="">
+                <span>长按.扫码</span>
+                <span>寻找属于自己的心印</span>
+            </div>
+        </div>
+    </div>
+    <div class="btmBox">
+    <div class="clearBox">了解其他好友</div>
+
+    <div class="friendBox">
+        <div class="friend-L" id="down_button">查看心印</div>
+        <div class="friend-R">分享好友</div>
+    </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/html2canvas.min.js"></script>
+
+    <script  type="text/javascript" >
+        $(document).ready( function(){
+
+            var targetDom = $("#price");
+            var copyDom = targetDom.clone();
+            copyDom.css('width',parseInt(targetDom.css('width')) + 'px');
+            copyDom.css('height',parseInt(targetDom.css('height'))  + "px");
+
+
+            $("#down_button").on("click", function(event) {
+                $('body').append(copyDom);
+                event.preventDefault();
+                html2canvas(copyDom, {
+                    allowTaint: true,
+                    taintTest: false,
+                    height: $("#price").outerHeight(),
+                    background:"#fff",
+                    onrendered: function(canvas) {
+                        canvas.id = "mycanvas";
+                        //document.body.appendChild(canvas);
+                        //生成base64图片数据
+                        var dataUrl = canvas.toDataURL();
+                        var newImg = document.createElement("img");
+                        newImg.src =  dataUrl;
+                        document.body.appendChild(newImg);
+                        copyDom.css('display','none');
+                        newImg.className="ccc"
+
+                    }
+
+                });
+            });
+
+        });
 
 </script>
+
 </body>
 </html>

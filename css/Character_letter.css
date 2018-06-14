@@ -6,6 +6,7 @@ html,body{
     background: url("../img/share2-bg@2x.png") no-repeat;
     background-size: 100% 100%;
     background-position: bottom;
+    z-index: -1;
 }
 .bg-fx{
     width: 70%;
@@ -27,12 +28,11 @@ html,body{
     max-height: 25rem;
     padding: 1.3rem .6rem .6rem 0;
     box-sizing: content-box;
-    z-index: 1;
 }
 .letter-jd {
     width: 100%;
     font-size: .32rem;
-    z-index: 1;
+    z-index: 9999;
     writing-mode: tb-rl;
 
 }
@@ -50,12 +50,13 @@ html,body{
     position: absolute;
     bottom:.15rem;
     left: .4rem;
-    z-index: 33;
+    z-index: 1;
 }
 .inscribeBox img{
     width: 2rem;
     height: 2rem;
-    z-index: 33;
+    z-index: -1;
+    opacity: .8;
 }
 .letter-R{
     display: flex;

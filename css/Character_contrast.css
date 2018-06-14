@@ -29,8 +29,7 @@
 .contrast-z-img{
     width: 1.48rem;
     height: 2.1rem;
-    /*margin-left: .48rem;*/
-    /*margin-top: .36rem;*/
+
 }
 .contrast-z{
     box-sizing: border-box;
@@ -248,7 +247,7 @@
 .codeBox{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: .5rem auto 0;
     width: 4rem;
     border: 2px dotted  #b70002;
     justify-content: center;
@@ -264,4 +263,15 @@
 .codeBox span{
     color: #333333;
     font-size: .22rem;
+}
+.btmBox{
+    width: 6.33rem;
+    margin: 0 auto;
+
+}
+.ccc{
+    position: absolute;
+    top: 6rem;
+    left: .7rem;
+    width: 6rem;
 }
