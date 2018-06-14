@@ -122,40 +122,20 @@
 <script src="js/html2canvas.min.js"></script>
 
     <script  type="text/javascript" >
-        var oBx = document.getElementById("oBx");
-        $(document).ready( function(){
-
-            var targetDom = $("#price");
-            var copyDom = targetDom.clone();
-            copyDom.css('width',parseInt(targetDom.css('width')) + 'px');
-            copyDom.css('height',parseInt(targetDom.css('height'))  + "px");
-
-
-            $("#down_button").on("click", function(event) {
-                $('body').append(copyDom);
-                event.preventDefault();
-                html2canvas(copyDom, {
-                    allowTaint: true,
-                    taintTest: false,
-                    height: $("#price").outerHeight(),
-                    background:"#fff",
-                    onrendered: function(canvas) {
-                        canvas.id = "mycanvas";
-
-                        var dataUrl = canvas.toDataURL();
-                        var newImg = document.createElement("img");
-                        newImg.src =  dataUrl;
-                        oBx.appendChild(newImg);
-                        copyDom.css('display','none');
-                        newImg.className="swing"
-
-                    }
-
-                });
-            });
-
+        var oBx =document.getElementById("oBx");
+        var options = {
+            backgroundColor: '#2e2d3b'
+        };
+        html2canvas(document.querySelector("#price"),options).then(function(canvas){
+            var  ImageData=canvas.toDataURL("image/png");
+            var newImg = document.createElement("img");
+            newImg.src =  ImageData;
+            oBx.appendChild(newImg);
+            document.querySelector("#down_button").src=ImageData;
+            newImg.className="ccc"
+//            document.querySelector("#down_button2").src=ImageData;
+//            document.querySelector("#down_button3").src=ImageData;
         });
-
 </script>
 
 </body>
