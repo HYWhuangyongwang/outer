@@ -32,6 +32,9 @@
     height: 2.1rem;
 
 }
+.contrastBox{
+    -webkit-touch-callout:default;
+}
 .contrast-z{
     box-sizing: border-box;
     display: flex;
@@ -272,7 +275,6 @@
 }
 .ccc{
     position: absolute;
-    opacity: .3;
     top: 0;
     left: 0;
     z-index: 1000;
