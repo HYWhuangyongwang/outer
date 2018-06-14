@@ -122,38 +122,11 @@
 <script src="js/html2canvas.min.js"></script>
 
     <script  type="text/javascript" >
-        $(document).ready( function(){
-
-            var targetDom = $("#price");
-            var copyDom = targetDom.clone();
-            copyDom.css('width',parseInt(targetDom.css('width')) + 'px');
-            copyDom.css('height',parseInt(targetDom.css('height'))  + "px");
 
 
-            $("#down_button").on("click", function(event) {
-                $('body').append(copyDom);
-                event.preventDefault();
-                html2canvas(copyDom, {
-                    allowTaint: true,
-                    taintTest: false,
-                    height: $("#price").outerHeight(),
-                    background:"#fff",
-                    onrendered: function(canvas) {
-                        canvas.id = "mycanvas";
-                        //document.body.appendChild(canvas);
-                        //生成base64图片数据
-                        var dataUrl = canvas.toDataURL();
-                        var newImg = document.createElement("img");
-                        newImg.src =  dataUrl;
-                        document.body.appendChild(newImg);
-                        copyDom.css('display','none');
-                        newImg.className="ccc"
-
-                    }
-
-                });
-            });
-
+        html2canvas(document.getElementById("price")).then(function(canvas) {
+            document.body.appendChild(canvas);
+            canvas.className="ccc"
         });
 
 </script>
