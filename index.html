@@ -1,79 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>心印图</title>
-    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
-    <script type="text/javascript">
-        $youziku.load("body", "e40e92aecea740f0b9207e961348eee5", "cyjianxk");
-        /*$youziku.load("#id1,.class1,h1", "e40e92aecea740f0b9207e961348eee5", "cyjianxk");*/
-        /*．．．*/
-        $youziku.draw();
-    </script>
-    <script>
-        fnResize();
-        window.onresize = function () {
-            fnResize()
-        };
-        function fnResize() {
-            var deviceWidth = document.documentElement.clientWidth || window.innerWidth;
+<meta charset="UTF-8">
+<title>jQuery手机端仿探探APP切换特效 - 站长素材</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-            document.documentElement.style.fontSize = (deviceWidth / 750)*100 + 'px'
-        }
+<link rel="stylesheet" href="css/photoSwipe.css">
+<style type="text/css">
+	.div1{
+		padding-top: 9rem;
+		font-size: 6rem;
+	}
+</style>
 
-    </script>
-    <link rel="stylesheet" href="css/H-ui.reset.css">
-    <link rel="stylesheet" href="css/Character_letter2.css">
 </head>
 <body>
-<div class="letter-bg">
-</div>
-<div class="letter-content">
-    <div class="letterL-box">
-        <div class="letterL-joss"></div>
-        <ul class="letterL-fbg">
 
-            <li class="letterL-list">
-                <span class="list-title">外</span>
-                <p class="list-content">性格外倾好行动，社交广泛有热情</p>
-            </li>
-            <li class="letterL-list">
-                <span class="list-title">圆</span>
-                <p class="list-content">性格外倾好行动，社交广泛有热情</p>
-            </li>
-            <li class="letterL-list">
-                <span class="list-title">人</span>
-                <p class="list-content">性格外倾好行动，社交广泛有热情</p>
-            </li>
-            <li class="letterL-list">
-                <span class="list-title">事</span>
-                <p class="list-content">性格外倾好行动，社交广泛有热情</p>
-            </li>
-        </ul>
+<div id="photo_box">
+	<div><div>
+	</div></div>
+</div>
 
-    </div>
-    <div class="letterR-box">
-        <div class="letterR-content">
-            <div class="seal-bg">
-                <span>李</span>
-                <span>白</span>
-                <span>之</span>
-                <span>印</span>
-            </div>
-            <div class="letter-R-t">
-                <img src="./img/xy@2x.png" alt="">
-            </div>
-            <div class="codeBox">
-                <!--二维码盒子-->
-                <img src="./img/ewm.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="red-seal">
-    <!--<img src="./img/Heartseal-11.png" alt="">-->
-</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/photoSwipe.js"></script>
+
 </body>
 </html>
