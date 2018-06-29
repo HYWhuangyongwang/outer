@@ -1,10 +1,16 @@
-/**
- * Created by 2017 helang.love@qq.com on 2017/12/2.
- */
+
+var myImg = ["https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=39429892503371488751&fm=27&gp=0.jpg","http://img3.imgtn.bdimg.com/it/u=2960542509,809787366&fm=27&gp=0.jpg","http://img5.imgtn.bdimg.com/it/u=81080394,3532788413&fm=27&gp=0.jpg","http://img5.imgtn.bdimg.com/it/u=3626217888,316039247&fm=27&gp=0.jpg","http://img2.imgtn.bdimg.com/it/u=2959119197,2886529201&fm=27&gp=0.jpg"];
 
 var photoSwipe={
     /*用户信息数组*/
-    imgArr:[],
+    imgArr:[{img:"http://img5.imgtn.bdimg.com/it/u=3626217888,316039247&fm=27&gp=0.jpg" +
+    "","name":"曹帅","content":"这是内容"},
+        {img:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3371845535,196884241&fm=27&gp=0.jpg","name":"小贾","content":"这是内容"},
+        {img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=648586898,2226520495&fm=27&gp=0.jpg", "name":"玉田","content":"这是内容"},
+        {"img":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=648586898,2226520495&fm=27&gp=0.jpg","name":"张三","content":"这是内容"},
+        {"img":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=648586898,2226520495&fm=27&gp=0.jpg","name":"李四","content":"这是内容"},
+    ],
+
     /*元素位置*/
     site:{
         _x_start:0,
@@ -28,16 +34,26 @@ var photoSwipe={
     },
     /*图片HTML*/
     imgHtml:function () {
-        var str='<div id="ind-'+this.index+'">'
-            +'<div class="div1">第'+(this.index+1)+'个</div>'
-            +'<div style="padding-top: 20px;color: #d01d33;font-weight: bold;">本demo只支持移动端</div>'
-            +'<div style="padding-top: 20px">左右滑动试试</div>'
-            +'<div style="padding-top: 20px">本demo仅实现滑动效果</div>'
-            +'<div style="padding-top: 20px">数据交互相关代码请各位自行添加</div>'
-            +'<div style="padding-top: 20px">如何修改请查看文件源码(未压缩)</div>'
-            +'<div style="padding-top: 20px">适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</div>'
-			+'<div style="padding-top: 20px">来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></div>'
-            +'</div>';
+        var str=`<div id="ind-${this.index}"><img style="width: 80px;height: 80px;border-radius:50%;margin: 20px auto;" src="${(this.imgArr[this.index]).img}" alt="">
+          <h3 style="text-align: center;font-weight: 600;color:rgba(102,102,102,.8);;margin: 0 auto 30px">${(this.imgArr[this.index]).name}</h3>
+          <div class="borderBox">
+                <div class="report-L">【心印偈】</div>
+                <div class="report-R">
+                <div class="report-content">
+                <p><span class="quotation">外：</span>性格外倾好行动，社交广泛有热情</p>
+            </div>
+                <div class="report-content">
+                    <p><span class="quotation">圆：</span>性格外倾好行动，社交广泛有热情</p>
+                </div>
+                <div class="report-content">
+                    <p><span class="quotation">人：</span>性格外倾好行动，社交广泛有热情</p>
+                </div>
+                <div class="report-content">
+                    <p><span class="quotation">事：</span>性格外倾好行动，社交广泛有热情</p>
+                </div>
+                </div>
+            </div>
+        </div>`;
         return str;
     },
     /*移动动画*/
@@ -117,9 +133,21 @@ $("#photo_box").on("touchend",function(e) {
     photoSwipe._y_end=ev.changedTouches[0].pageY;
     var act_el=$("#ind-"+(photoSwipe.index-1).toString(10));
     if(photoSwipe.left_val>0 && photoSwipe.left_val>doc_width/2-doc_width/4.5){
-        photoSwipe.animateMove(act_el,1);
+        if(photoSwipe.index<photoSwipe.imgArr.length-1){
+             photoSwipe.animateMove(act_el,1);
+        }else {
+            photoSwipe.imgArr = photoSwipe.imgArr.concat(myImg);
+            photoSwipe.animateMove(act_el,1);
+        }
     }else if(photoSwipe.left_val<0 && photoSwipe.left_val<-doc_width/2+doc_width/4.5){
-        photoSwipe.animateMove(act_el,-1);
+        if(photoSwipe.index<photoSwipe.imgArr.length-1){
+            photoSwipe.animateMove(act_el,-1);
+        }else {
+            photoSwipe.imgArr = photoSwipe.imgArr.concat(myImg);
+            photoSwipe.animateMove(act_el,-1);
+        }
+
+
     }else {
         photoSwipe.animateReset(act_el);
     }
